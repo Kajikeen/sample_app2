@@ -3,6 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.5.3'
 gem 'rails', '~> 5.2.3'
+gem 'bootstrap-sass', '3.3.7'
 
 gem 'puma', '~> 3.11'
 gem 'sass-rails', '~> 5.0'
@@ -27,6 +28,7 @@ group :development do
 end
 
 group :test do
+  gem 'rails-controller-testing', '1.0.2'
   gem 'capybara', '>= 2.15'
   gem 'minitest',                 '5.10.3'
   gem 'minitest-reporters',       '1.1.14'
